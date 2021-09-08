@@ -32,7 +32,7 @@ target_include_directories(
 target_link_libraries(
   opentelemetry_exporter_jaeger_trace
   PUBLIC opentelemetry_resources http_client_curl
-  PRIVATE thrift::thrift)
+  PRIVATE thrift::thrift Boost::boost)
 
 if(MSVC)
   target_compile_definitions(opentelemetry_exporter_jaeger_trace

@@ -220,6 +220,8 @@ if(WITH_JAEGER)
       install_windows_deps()
     endif()
   endif()
+  # We need boost (it may not be installed in the default location)
+  find_package(Boost REQUIRED CONFIG)
 endif()
 
 if(MSVC)
