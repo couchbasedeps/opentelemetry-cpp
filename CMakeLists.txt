@@ -4,6 +4,9 @@ cmake_minimum_required(VERSION 3.1)
 # versions of gtest
 cmake_policy(SET CMP0057 NEW)
 
+# We want to be able to specify the root directory
+cmake_policy(SET CMP0074 NEW)
+
 project(opentelemetry-cpp)
 
 # Mark variables as used so cmake doesn't complain about them
